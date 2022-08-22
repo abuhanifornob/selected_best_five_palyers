@@ -5,12 +5,8 @@ function displaySelectedPlayer(players) {
     let li = document.createElement('li');
     if (players.length <= 5) {
         for (let i = 0; i < players.length; i++) {
-
-
             li.innerText = players[i];
             ol.appendChild(li);
-            console.log(ol.appendChild(li));
-
 
         }
     } else {
@@ -25,10 +21,26 @@ function selectPlayer(event) {
     if (playerNameArray.length < 5) {
         playerNameArray.push(playerName);
         displaySelectedPlayer(playerNameArray);
-        console.log(event.disabled = true);
+        event.disabled = true;
     } else {
         alert('Already Best Five Players Selected!!!');
         return;
     }
-    console.log(playerNameArray);
+
 }
+
+function playerExpenses() {
+    const perPlayerExpensesField = document.getElementById('player-cost');
+    const perPlayerExpenses = parseFloat(perPlayerExpensesField.value);
+    const playerExpensesElement = document.getElementById('playerExpances');
+    const players = playerNameArray.length;
+    const totalPlayerExpenses = perPlayerExpenses * players;
+
+    playerExpensesElement.innerText = totalPlayerExpenses;
+
+}
+
+document.getElementById('calculate').addEventListener('click', function() {
+    playerExpenses();
+
+})
