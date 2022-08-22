@@ -37,10 +37,27 @@ function playerExpenses() {
     const totalPlayerExpenses = perPlayerExpenses * players;
 
     playerExpensesElement.innerText = totalPlayerExpenses;
+    return totalPlayerExpenses;
+
+}
+
+function totalExpenses() {
+    const managerExpensesField = document.getElementById('manager');
+    const managerExpenses = parseFloat(managerExpensesField.value);
+    const coachExpensesField = document.getElementById('coach');
+    const coachExpenses = parseFloat(coachExpensesField.value);
+    const managerAndCoachExpenses = managerExpenses + coachExpenses;
+    const totalExpenses = playerExpenses() + managerAndCoachExpenses;
+    const totalExpensesElement = document.getElementById('totalExpenses');
+    totalExpensesElement.innerText = totalExpenses;
+
 
 }
 
 document.getElementById('calculate').addEventListener('click', function() {
     playerExpenses();
 
-})
+});
+document.getElementById('totalCalculate').addEventListener('click', function() {
+    totalExpenses();
+});
