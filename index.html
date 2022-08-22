@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .header-section {
+            background-color: rgb(218, 252, 252);
+            text-align: center;
+        }
+        
+        .heading-text {
+            color: #FF5E19;
+            font-family: 'Berkshire Swash';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 76px;
+            line-height: 94px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+        .player-name {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        
+        .card-color {
+            background-color: rgb(86, 166, 168);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="row">
+            <div class="col-3">
+                <img class="w-100" src="images/Shakib-removebg-preview.png" alt="">
+            </div>
+            <div class="col-6">
+                <h1 class="heading-text">Best Five Player</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates deserunt laboriosam quia eius ducimus reprehenderit dolor doloremque earum pariatur officia omnis perferendis dolore debitis consequatur temporibus quam modi laborum asperiores
+                    culpa architecto, sequi unde porro consequuntur animi. Amet quia illo voluptatum quos. Placeat ut necessitatibus distinctio accusamus labore qui nulla?</p>
+            </div>
+            <div class="col-3">
+                <img class="w-100" src="images/BCB_Logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="container text-center">
+            <div class="row mt-5">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Shakib-removebg-preview.png" class="card-img-top w-100" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-shakib" class="card-title player-name">Shakib Al Hasan</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Taskin Ahmed.png" class="card-img-top w-100 h-20" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-taskin" class="card-title player-name">Taskin Ahmed</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Mushfique.png" class="card-img-top w-100" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-mushfique" class="card-title player-name">Mushfique Rahim</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Mehedi-Hasan.png" class="card-img-top w-100" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-mehedi" class="card-title player-name">Mehedi-Hasan</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Mahmudullah.png" class="card-img-top w-100 h-20" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-mahmudullah" class="card-title player-name">Mahmudullah</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Mohammad Saifudding.png" class="card-img-top w-100" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-saifuddin" class="card-title player-name">Saifudding</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Afif Hossain.png" class="card-img-top w-100" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-afif" class="card-title player-name">Afif Hossain</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Liton-Das.png" class="card-img-top w-100 h-20" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-liton" class="card-title player-name">Liton Das</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow-lg mb-5 rounded card-color" style="width: 18rem;">
+                                <img src="images/Mustafizur-Rahman.png" class="card-img-top w-100" style="height: 250px" alt="...">
+                                <div class="card-body">
+                                    <h5 id="player-mustafiz" class="card-title player-name">Mustafizur</h5>
+                                    <p class="card-text txt-bold">
+                                        <Span>Match:300</Span> <span>Run:500</span> <span>Wicket:500</span></p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button id="select-btn" type="button" class="btn btn-primary" onclick="selectPlayer(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-3">
+                    <div class="row  " style="height:400px;">
+                        <div class="col bg-primary mb-5 p-4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Selected - V</h5>
+                                    <ol id="ol-body" class="text-start">
+
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col mt-5">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Card title</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    <script src="js/five-player.js"></script>
+</body>
+
+</html>
