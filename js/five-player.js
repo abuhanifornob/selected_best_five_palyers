@@ -10,7 +10,7 @@ function displaySelectedPlayer(players) {
 
         }
     } else {
-        alert('Alreay Five Players Seleted');
+        alert('Already Five Players Seleted');
         return;
     }
 }
