@@ -29,3 +29,12 @@
 .card-color {
     background-color: rgb(86, 166, 168);
 }
+
+.player-card {
+    background-color: rgb(20, 45, 46);
+}
+
+.calculation-part {
+    background-color: rgb(20, 45, 46);
+    color: blanchedalmond;
+}

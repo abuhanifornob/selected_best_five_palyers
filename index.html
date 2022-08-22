@@ -22,9 +22,8 @@
                 <img class="w-100" src="images/Shakib-removebg-preview.png" alt="">
             </div>
             <div class="col-6">
-                <h1 class="heading-text">Best Five Player</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates deserunt laboriosam quia eius ducimus reprehenderit dolor doloremque earum pariatur officia omnis perferendis dolore debitis consequatur temporibus quam modi laborum asperiores
-                    culpa architecto, sequi unde porro consequuntur animi. Amet quia illo voluptatum quos. Placeat ut necessitatibus distinctio accusamus labore qui nulla?</p>
+                <h1 class="heading-text fw-800">Best Five Player</h1>
+                <p>You Select Your Best Five Players because if you Select the Best Player which Your Team Wins probability More.</p>
             </div>
             <div class="col-3">
                 <img class="w-100" src="images/BCB_Logo-removebg-preview.png" alt="">
@@ -166,7 +165,7 @@
                 </div>
                 <div class="col-3">
                     <div class="row  " style="height:400px;">
-                        <div class="col bg-primary mb-5 p-4">
+                        <div class="col mb-5 p-4 player-card">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body ">
                                     <h5 class="card-title">Selected - V</h5>
@@ -179,17 +178,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="col mt-5 bg-primary">
-                            <h1>Budget</h1>
+                        <div class="col mt-5  calculation-part">
+                            <h1 class="py-5">Budget</h1>
                             <div class="d-flex justify-content-evenly">
                                 <label class="fw-bolder" for="">Per Player</label>
                                 <input id="player-cost" class="form-control w-50" type="text" name="" id="">
                             </div>
                             <div class="d-grid gap-2 col-12 mx-auto my-3">
-                                <button id="calculate" type="button" class="btn btn-secondary">Calculate</button>
+                                <button id="calculate" type="button" class="btn btn-primary">Calculate</button>
                             </div>
 
-                            <h3 class="p-3">Player Expenses <span id="playerExpances"> 0</span></h3>
+                            <h3 class="p-3">Player Expenses $<span id="playerExpances">0</span></h3>
                             <div class="d-flex justify-content-evenly my-3">
                                 <label class="fw-bolder" for="">Manager</label>
                                 <input id="manager" class="form-control w-50" type="text" name="" id="">
@@ -200,17 +199,21 @@
                             </div>
 
 
-                            <div class="d-grid gap-2 col-12 mx-auto my-3">
-                                <button id="totalCalculate" type="button" class="btn btn-secondary">Calculate Total</button>
+                            <div class="d-grid gap-2 col-12 mx-auto my-5">
+                                <button id="totalCalculate" type="button" class="btn btn-primary">Calculate Total</button>
                             </div>
-                            <h3>Total <span id="totalExpenses" class="p-5">0</span></h3>
+                            <h3 class="">Total $<span id="totalExpenses ms-3">0</span></h3>
                         </div>
 
                     </div>
 
                 </div>
             </div>
+
     </main>
+    <footer class="bg-dark">
+        <p class="text-white text-center py-5 fw-bold fs-3">Copyright @ 2022 Abu Hanif</p>
+    </footer>
     <script src="js/five-player.js"></script>
 </body>
 
